@@ -444,7 +444,6 @@ section.work > div .ifame, section.donate > div .ifame {
 }
 
 section.work > div .ifame img, section.donate > div .ifame img {
-  width: 100%;
   height: 100%;
 }
 
@@ -546,6 +545,7 @@ section.events > div .upcoming-events .event {
 section.events > div .upcoming-events .event img {
   width: 285px;
   padding-right: 35px;
+  height: 223px;
 }
 
 section.events > div .upcoming-events .event .description h6 {
@@ -995,6 +995,7 @@ section.bank-details .snap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 20px;
 }
 
 section.bank-details .snap img {
@@ -1361,8 +1362,9 @@ section.about-messy > div p:first-of-type {
 section.events-heroe {
   background: url(./img/peopleOutside.png) !important;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
   background-position: center;
+  background-size: cover !important;
 }
 
 section.events-items {
@@ -1762,6 +1764,12 @@ section.donate-now > div .gratitude p {
   * {
     line-height: normal;
   }
+  body > section.donate-now > div h3 {
+    font-size: 18px;
+  }
+  body > section.donate-now > div div > div.support > img {
+    height: auto;
+  }
   body > footer {
     margin-bottom: 24px;
   }
@@ -1825,6 +1833,10 @@ section.donate-now > div .gratitude p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  section.work > div .ifame, section.donate > div .ifame {
+    height: 300px !important;
+    width: 100%;
+  }
   section.work > div .video-info button, section.donate > div .video-info button {
     width: 220px;
   }
@@ -1871,6 +1883,9 @@ section.donate-now > div .gratitude p {
   }
   section.meet-team h3 {
     font-size: 25px !important;
+  }
+  section.meet-team .ifame img {
+    height: 300px !important;
   }
   section.meet-team .video-info button {
     width: 230px !important;
@@ -1926,8 +1941,8 @@ section.donate-now > div .gratitude p {
         flex-wrap: wrap;
   }
   section.events > div .upcoming-events .event img {
-    width: 100%;
     padding-right: 0;
+    height: 100%;
   }
   section.events > div .upcoming-events .event .description {
     padding-top: 12px;
@@ -1990,6 +2005,7 @@ section.donate-now > div .gratitude p {
     padding-bottom: 20px;
     margin: 20px 0;
     text-align: center;
+    overflow: hidden;
   }
   section.latest-news h3 {
     font-size: 36px;
@@ -2009,12 +2025,15 @@ section.donate-now > div .gratitude p {
   }
   section.latest-news .notices img.bible {
     padding: 20px;
-    width: 100%;
+    width: auto;
   }
   section.latest-news .notices .card {
     margin-bottom: 30px;
-    width: 100% !important;
-    padding: 20px 20px;
+    width: 300px !important;
+    padding: 20px 0px;
+  }
+  section.latest-news .notices .card p {
+    padding: 0;
   }
   section.latest-news .notices .card .card-header {
     -ms-flex-wrap: wrap;
@@ -2046,6 +2065,7 @@ section.donate-now > div .gratitude p {
         -ms-flex-pack: center;
             justify-content: center;
     padding: 20px 20px;
+    flex-wrap: wrap;
   }
   section.bank-details .snap {
     display: -webkit-box;
@@ -2175,6 +2195,49 @@ section.donate-now > div .gratitude p {
 }
 
 @media (max-width: 768px) {
+  body > section.donate-now > div > div.support > img {
+    height: auto;
+  }
+  section.hope h6 {
+    font-size: 18px;
+  }
+  section.hope h3 {
+    font-size: 28px;
+  }
+  section.hope > div .team {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  section.hope > div .team img {
+    width: 100%;
+  }
+  section.hope > div .team h5 {
+    color: #1C0902;
+    font-size: 20px;
+  }
+  section.hope > div .team span {
+    color: #C46508;
+    font-size: 16px;
+  }
+  section.hope > div .team p {
+    font-size: 14px;
+    color: #1C0902;
+    font-family: 'regular';
+    line-height: 22px;
+  }
+  section.work > div .ifame, section.donate > div .ifame {
+    height: 350px;
+  }
+  section.work > div .ifame span, section.donate > div .ifame span {
+    font-size: 40px;
+  }
+  section.work > div .video-info button, section.donate > div .video-info button {
+    width: 220px;
+  }
+  section.work > div .video-info h3, section.donate > div .video-info h3 {
+    font-size: 25px;
+  }
   header.nav {
     padding: 20px;
   }
@@ -2272,6 +2335,10 @@ section.donate-now > div .gratitude p {
   section.location .saints {
     margin-top: 40px;
   }
+  section.location .saints img {
+    height: auto !important;
+    width: 100%;
+  }
   section.bank-details {
     margin: 0;
     padding-left: 30px;
@@ -2328,6 +2395,9 @@ section.donate-now > div .gratitude p {
   body section.heroe h1 {
     font-size: 50px;
   }
+  body section.heroe ul.nav {
+    width: 100%;
+  }
   section.categories {
     padding-top: 85px;
     padding-bottom: 65px;
@@ -2371,6 +2441,29 @@ section.donate-now > div .gratitude p {
 }
 
 @media (max-width: 1040px) {
+  section.events-items {
+    margin-top: 100px;
+    margin-bottom: 189px;
+  }
+  section.events-items > div .caption img {
+    height: 220px;
+    padding-right: 35px;
+  }
+  section.events-items > div .caption .text-inner {
+    width: 100%;
+  }
+  section.events-items > div .caption .text-inner h6 {
+    font-size: 16px;
+  }
+  section.events-items > div .caption .text-inner h3 {
+    font-size: 21px;
+  }
+  section.events-items > div .caption .text-inner p {
+    font-size: 14px;
+  }
+  section.events-items > div .caption .text-inner span.date {
+    font-size: 16px;
+  }
   section.location .map img {
     width: 100%;
   }

@@ -149,7 +149,7 @@ section.heroe{display: flex;flex-direction: column;justify-content: center;heigh
           >div{
              
                   .ifame{width:100%;height:100%;display:flex;justify-content:center;align-items:center;overflow:hidden;position:relative;
-                    img{width: 100%;height: 100%;}
+                    img{height: 100%;}
                     .play-btn{position: absolute;
                         span{font-size: 80px;color: white;border:4px solid white;padding:40px;border-radius:100px;text-align: center;}
                     }
@@ -178,7 +178,7 @@ section.events{padding-top: 122px;
             h5{color: #C46508;font-family: 'regular';font-size: 24px;word-spacing: 3px;padding-bottom: 24px;}
             h3{color: #454545;font-size: 48px;font-family: 'regular';line-height: 40px;letter-spacing: 5px;padding-bottom: 45px;}
             .event{display: flex;padding-bottom:55px;
-                img{width: 285px;padding-right: 35px;}
+                img{width: 285px;padding-right: 35px;height: 223px;}
                 .description{
                     h6{color: #454545;font-size: 21px;font-family: 'regular';padding-bottom: 12px;}
                     h4{color: #454545;font-family: 'medium';font-size: 38px;padding-bottom: 24px;}
@@ -306,7 +306,7 @@ section.meet-team{margin-bottom: 180px;overflow: hidden;
 
 section.bank-details{display: flex;justify-content: space-around;margin-bottom:160px;padding:60px 0;border-top:2px solid #979797;border-bottom:2px solid #979797;
    
-    .snap{display: flex;
+    .snap{display: flex;padding-bottom: 20px;;
         img{padding-right: 50px;height: 224px;}
 
         .snapscan-text{
@@ -426,7 +426,7 @@ section.about-messy{margin:48px 0;
 }
 
 // events page////@extend
-section.events-heroe{background: url(./img/peopleOutside.png) !important;background-position: center;background-repeat: no-repeat;background-position: center;}
+section.events-heroe{background: url(./img/peopleOutside.png) !important;background-position: center;background-repeat: no-repeat !important;background-position: center;background-size: cover !important;}
 
 ///section heroe ends
 section.events-items{margin-top:100px;margin-bottom:189px;
@@ -537,7 +537,9 @@ section.donate-now{margin-top:88px;text-align:center;margin-bottom: 65px;
 @media (max-width: 575px){
 
 *{line-height: normal;}
-
+body > section.donate-now >div{
+    h3{font-size: 18px;}
+ div > div.support > img{height: auto;}}
 body > footer {margin-bottom: 24px;
 > div > div > div:nth-child(3) > div{margin-left: 0;margin-top: 20px;}}
     ///section heroe ends
@@ -584,7 +586,7 @@ header.nav{padding: 20px;
     
     >div{
        
-         
+         .ifame{height: 300px !important;width: 100%;}
             .video-info{
               button{width:220px;}
               h3{font-size: 25px;}
@@ -621,6 +623,9 @@ body section.heroe{height:86vh !important;
       //aboutends
       section.meet-team{margin-bottom:0px;
         h3{font-size: 25px !important;}
+        .ifame{
+            img{height:300px!important;}
+        }
         .video-info{
            button{width:230px !important;}
         }
@@ -663,7 +668,7 @@ section.events{padding-top:60px;
             h5{font-size: 20px;}
             h3{font-size: 24px;}
             .event{flex-wrap: wrap;
-                img{width:100%;padding-right:0;}
+                img{padding-right:0;height:100%;}
                 .description{padding-top: 12px;
                     p{line-height:20px;}
                     h4{font-size: 24px;}
@@ -698,11 +703,12 @@ section.events{padding-top:60px;
 ///events styling ends
 ///latest news styling
 
-section.latest-news{padding-left:0px !important;padding-bottom:20px;margin:20px 0;text-align:center;
+section.latest-news{padding-left:0px !important;padding-bottom:20px;margin:20px 0;text-align:center;overflow: hidden;
     h3{font-size:36px;}
     .notices{display: flex;align-items:center;flex-wrap:wrap;justify-content:center;
-        img.bible{padding:20px;width: 100%;;}
-    .card{margin-bottom:30px;width:100% !important;padding:20px 20px;
+        img.bible{padding:20px;width:auto;}
+    .card{margin-bottom:30px;width:300px !important;padding:20px 0px;
+        p{padding: 0;;}
         .card-header{flex-wrap:wrap;width:100%;
             h3{font-size: 10px;}
             button.btn-link{
@@ -723,7 +729,7 @@ section.latest-news{padding-left:0px !important;padding-bottom:20px;margin:20px 
 
 ///banking
 
-section.bank-details{margin-bottom:0px;flex-wrap:wrap;justify-content:center;padding:20px 20px;
+section.bank-details{margin-bottom:0px;flex-wrap:wrap;justify-content:center;padding:20px 20px;flex-wrap:wrap;
    
     .snap{display: flex;
         img{padding-right: 50px;height: 224px;}
@@ -799,7 +805,37 @@ section.about-messy{
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 768px){
+    body > section.donate-now > div > div.support > img{height: auto;}
+    section.hope{
+        h6{font-size:18px;}
+        h3{font-size:28px;}
+        >div{
+            .team{width:100%;text-align:left;margin-bottom:40px;
+              img{width:100%;}
+              h5{color:#1C0902;font-size:20px;}
+              span{color:#C46508;font-size:16px;}
+              p{font-size: 14px;color:#1C0902;font-family: 'regular';line-height: 22px;}
+            }
+        }
+    }
+      ///what we do starts works
+  section.work,section.donate{
+    
+    >div{
+       
+         .ifame{height: 350px;
+            span{font-size: 40px;}
+        }
+            .video-info{
+              button{width:220px;}
+              h3{font-size: 25px;}
+             
+          }
+        
+    }
+}
 
+///what we do starts works ends
    ///events styling starts
 header.nav{padding: 20px;}
    section.events{
@@ -883,7 +919,7 @@ section.online-news{
 section.latest-news{justify-content: center;
   
     .notices{flex-wrap: wrap;padding:20px;
-        img.bible{padding-left:0px;height: 340px;}
+        img.bible{padding-left:0px;height:340px;}
     .card{margin-bottom:30px;width:500px;
        
     }}
@@ -896,6 +932,7 @@ section.meet-team{margin:0;}
 
 section.location{
     .saints{margin-top: 40px;
+        img{height: auto !important;width: 100%;}
        
     }
 }
@@ -935,6 +972,7 @@ section.heroe{height:100vh !important;
             &:nth-of-type(2){font-size:18px;line-height:normal;}
         }
         h1{font-size:50px;}
+        ul.nav{width:100%;}
        }
        //categories starts
     section.categories{padding-top:85px;padding-bottom:65px;
@@ -977,6 +1015,27 @@ section.heroe{height:100vh !important;
 }
 /////////////////////////////@extend
 @media (max-width:1040px){
+
+///section heroe ends
+section.events-items{margin-top:100px;margin-bottom:189px;
+    >div{
+       
+        .caption{
+            img{height:220px;padding-right: 35px;}
+            .text-inner{width:100%;
+                h6{font-size:16px;}
+                h3{font-size:21px;}
+                p{font-size: 14px;}
+                span.date{font-size:16px;}
+            }
+        }
+    }
+
+}
+// events-items end
+
+
+
     section.location{
         .map{
             img{width:100%;}
