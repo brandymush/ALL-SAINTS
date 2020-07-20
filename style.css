@@ -1,0 +1,2556 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  overflow-x: hidden;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+p {
+  font-family: 'medium';
+}
+
+h1 {
+  font-family: "medium";
+  font-size: 50px;
+}
+
+header.nav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 35px 70px 35px 35px;
+  height: 10vh;
+  width: 100%;
+  z-index: 9999;
+  color: white;
+  position: fixed;
+}
+
+header.nav ul.nav {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header.nav ul.nav li.nav-items a.nav-links {
+  color: #000000;
+  font-family: 'regular';
+}
+
+header.nav .harmburger {
+  width: 30px;
+  height: 40px;
+  z-index: 999;
+}
+
+header.nav .harmburger span {
+  display: block;
+  height: 2px;
+  background-color: #fff;
+  width: 100%;
+  font-family: 'regular';
+}
+
+header.nav .harmburger span:nth-of-type(2) {
+  margin: 5px 0;
+}
+
+section.heroe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(./img/IMG_4608.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+section.heroe p {
+  font-size: 26px;
+  color: #FFFFFF;
+  z-index: 999;
+  padding-bottom: 26px;
+  text-transform: capitalize;
+}
+
+section.heroe p:nth-of-type(2) {
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  font-family: 'regular';
+  letter-spacing: 2px;
+}
+
+section.heroe h1 {
+  z-index: 2;
+  position: relative;
+  color: #fff;
+  font-family: medium;
+  padding-bottom: 26px;
+  text-transform: uppercase;
+  font-size: 90px;
+  letter-spacing: 5px;
+}
+
+section.heroe a.btn {
+  z-index: 99;
+  color: #454545;
+  background-color: #fff;
+  height: 70px;
+  width: 360px;
+  font-family: "light";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-top: 33px;
+  text-decoration: none;
+}
+
+section.heroe .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  opacity: .5;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+section.heroe ul.nav {
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  background: #F8E1F4;
+  width: 400px;
+  z-index: 999;
+  left: -100%;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+  z-index: 9999990;
+  text-align: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 116px 40px 0;
+}
+
+section.heroe ul.nav button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 60px;
+  font-weight: lighter;
+}
+
+section.heroe ul.nav button span {
+  font-weight: lighter;
+}
+
+section.heroe ul.nav button:focus {
+  outline: none;
+}
+
+section.heroe ul.nav li {
+  padding-bottom: 32px;
+  padding-bottom: 32px;
+}
+
+section.heroe ul.nav li a {
+  font-size: 28px;
+  color: #000000;
+  font-family: 'medium';
+}
+
+section.heroe ul.nav.on {
+  left: 0%;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+section.categories {
+  padding-top: 85px;
+  padding-bottom: 65px;
+}
+
+section.categories > div > div .infor {
+  height: 240px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+section.categories > div > div .infor p {
+  position: absolute;
+  color: #ffffff;
+  font-family: 'bold';
+  font-size: 26px;
+  font-weight: 700;
+}
+
+section.categories > div > div .infor img {
+  width: 100%;
+}
+
+section.about {
+  text-align: center;
+}
+
+section.about h5 {
+  color: #C46508;
+  font-size: 24px;
+  font-family: 'regular';
+  padding-bottom: 25px;
+}
+
+section.about h2 {
+  font-size: 48px;
+  color: #454545;
+  font-family: 'regular';
+  font-weight: 400;
+  padding-bottom: 33px;
+  letter-spacing: 3px;
+}
+
+section.about p {
+  line-height: 30px;
+  padding-bottom: 20px;
+  color: #454545;
+  font-size: 22px;
+  font-family: "regular";
+}
+
+section.reflections {
+  padding-top: 85px;
+  padding-bottom: 120px;
+}
+
+section.reflections > div h5 {
+  color: #C46508;
+  text-align: center;
+  padding-bottom: 60px;
+  font-family: 'medium';
+  font-size: 24px;
+}
+
+section.reflections > div > div .prayer-img {
+  height: 678px;
+  width: 450px;
+}
+
+section.reflections > div > div .prayer-img img {
+  height: 100%;
+  width: 100%;
+}
+
+section.reflections > div > div .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+section.reflections > div > div .time .card {
+  height: 330px;
+  background-color: #F9C49A;
+  text-align: center;
+  padding: 30px;
+  outline: 2px solid white;
+  outline-offset: -10px;
+  width: 100%;
+}
+
+section.reflections > div > div .time .card:nth-of-type(2) {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+section.reflections > div > div .time .card p {
+  padding-bottom: 15px;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+section.reflections > div > div .time .card .verses {
+  padding-bottom: 13px;
+  line-height: normal;
+}
+
+section.reflections > div > div .time .card p.message {
+  font-size: 15px;
+  line-height: normal;
+}
+
+section.reflections > div > div .last {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.reflections > div > div .last .card {
+  width: 408px;
+  background-color: #EDA164;
+  height: 466px;
+  outline: 2px solid white;
+  outline-offset: -10px;
+  border-radius: 4px;
+  padding: 30px 40px;
+  text-align: center;
+}
+
+section.reflections > div > div .last .card p {
+  padding-bottom: 10px;
+  line-height: 30px;
+  color: #454545;
+  padding-top: 10px;
+  font-size: 22px;
+  line-height: normal;
+}
+
+section.reflections > div > div .last .card p.message {
+  font-size: 18px;
+  font-family: 'regular';
+  color: #454545;
+  padding-bottom: 30px;
+  line-height: normal;
+}
+
+section.reflections > div > div .last img {
+  width: 407px;
+  justify-self: flex-end;
+}
+
+section.work, section.donate {
+  overflow: hidden;
+}
+
+section.work > div .ifame, section.donate > div .ifame {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+section.work > div .ifame img, section.donate > div .ifame img {
+  width: 100%;
+  height: 100%;
+}
+
+section.work > div .ifame .play-btn, section.donate > div .ifame .play-btn {
+  position: absolute;
+}
+
+section.work > div .ifame .play-btn span, section.donate > div .ifame .play-btn span {
+  font-size: 80px;
+  color: white;
+  border: 4px solid white;
+  padding: 40px;
+  border-radius: 100px;
+  text-align: center;
+}
+
+section.work > div .video-info, section.donate > div .video-info {
+  width: 100%;
+  background-color: #F8E1F4;
+  height: 100%;
+  padding: 65px 50px;
+}
+
+section.work > div .video-info h5, section.donate > div .video-info h5 {
+  color: #C46508;
+  font-size: 26px;
+  padding-bottom: 20px;
+  font-family: 'regular';
+}
+
+section.work > div .video-info h3, section.donate > div .video-info h3 {
+  line-height: 50px;
+  font-size: 48px;
+  font-family: 'medium';
+  font-weight: 500;
+  letter-spacing: .1em;
+  padding-bottom: 10px;
+}
+
+section.work > div .video-info p, section.donate > div .video-info p {
+  color: #454545;
+  font-size: 22px;
+  font-family: 'regular';
+  padding: 15px 0;
+  font-weight: 400;
+  line-height: 25px;
+  word-spacing: .1em;
+}
+
+section.work > div .video-info button, section.donate > div .video-info button {
+  display: block;
+  height: 55px;
+  width: 304px;
+  background: #280F06;
+  color: #FFFFFF;
+  font-size: 22px;
+  margin-bottom: 38px;
+  border: none;
+  margin-top: 40px;
+  font-family: 'regular';
+}
+
+section.work > div .video-info a, section.donate > div .video-info a {
+  padding-left: 21px;
+}
+
+section.work > div .video-info a img, section.donate > div .video-info a img {
+  height: 50px;
+}
+
+section.events {
+  padding-top: 122px;
+}
+
+section.events > div .upcoming-events h5 {
+  color: #C46508;
+  font-family: 'regular';
+  font-size: 24px;
+  word-spacing: 3px;
+  padding-bottom: 24px;
+}
+
+section.events > div .upcoming-events h3 {
+  color: #454545;
+  font-size: 48px;
+  font-family: 'regular';
+  line-height: 40px;
+  letter-spacing: 5px;
+  padding-bottom: 45px;
+}
+
+section.events > div .upcoming-events .event {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 55px;
+}
+
+section.events > div .upcoming-events .event img {
+  width: 285px;
+  padding-right: 35px;
+}
+
+section.events > div .upcoming-events .event .description h6 {
+  color: #454545;
+  font-size: 21px;
+  font-family: 'regular';
+  padding-bottom: 12px;
+}
+
+section.events > div .upcoming-events .event .description h4 {
+  color: #454545;
+  font-family: 'medium';
+  font-size: 38px;
+  padding-bottom: 24px;
+}
+
+section.events > div .upcoming-events .event .description p {
+  font-size: 16px;
+  color: #454545;
+  line-height: 1.333333;
+  padding-bottom: 24px;
+  clear: #454545;
+}
+
+section.events > div .upcoming-events .event .description span {
+  color: #454545;
+  font-size: 21px;
+  font-family: 'regular';
+}
+
+section.events > div .upcoming-events a.more {
+  color: #454545;
+  font-family: 'regular';
+  font-size: 21px;
+  text-transform: uppercase;
+  text-transform: capitalize;
+}
+
+section.events > div .service-times h6 {
+  color: #C46508;
+  font-family: 'regular';
+  font-size: 24px;
+  padding-bottom: 16px;
+}
+
+section.events > div .service-times .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 24px;
+}
+
+section.events > div .service-times .time p {
+  padding-left: 25px;
+}
+
+section.events > div .service-times .time p span {
+  display: block;
+  line-height: 20px;
+}
+
+section.events > div .service-times .abt-service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.events > div .service-times .abt-service .card {
+  height: 560px;
+  width: 391px;
+  background: #F9C49A;
+  outline: 2px solid #fff;
+  outline-offset: -12px;
+  padding: 30px 25px;
+}
+
+section.events > div .service-times .abt-service .card h3 {
+  text-transform: capitalize;
+  color: #454545;
+  font-size: 22px;
+  font-family: 'bold';
+}
+
+section.events > div .service-times .abt-service .card p {
+  padding: 15px 0px;
+  line-height: 20px;
+  color: #454545;
+  font-family: 'regular';
+}
+
+section.events > div .service-times .abt-service img {
+  height: 560px;
+}
+
+section.latest-news {
+  padding-top: 100px;
+  padding-left: 70px;
+  background: #8DDED2;
+  padding-bottom: 114px;
+  margin: 90px 0;
+}
+
+section.latest-news h6 {
+  font-size: 24px;
+  font-family: 'medium';
+  color: #C46508;
+  padding-bottom: 26px;
+}
+
+section.latest-news h3 {
+  font-size: 48px;
+  font-family: 'medium';
+  color: #454545;
+  padding-bottom: 36px;
+  letter-spacing: 5px;
+}
+
+section.latest-news .notices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.latest-news .notices img.bible {
+  padding-left: 70px;
+  height: 375px;
+}
+
+section.latest-news .notices .card {
+  margin-bottom: 50px;
+  width: 735px;
+  background: #fff;
+  border: none;
+  padding: 40px 30px;
+}
+
+section.latest-news .notices .card h3 {
+  font-size: 21px;
+  font-family: 'medium';
+  color: #454545;
+}
+
+section.latest-news .notices .card .card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+  border: none;
+  height: 86px;
+}
+
+section.latest-news .notices .card .card-header button.btn-link {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 0;
+  font-family: "Font Awesome 5 Brands";
+}
+
+section.latest-news .notices .card .card-header button.btn-link:focus {
+  outline: none;
+}
+
+section.latest-news .notices .card .card-header button.btn-link img.minus {
+  display: none;
+  height: 50px;
+}
+
+section.latest-news .notices .card .card-header button.btn-link img.plus {
+  display: block;
+  height: 50px;
+  -webkit-columns: #4d4d4d;
+          columns: #4d4d4d;
+}
+
+section.latest-news .notices .card .card-header button.btn-link.open:focus {
+  outline: none;
+}
+
+section.latest-news .notices .card .card-header button.btn-link.open img.minus {
+  display: block !important;
+}
+
+section.latest-news .notices .card .card-header button.btn-link.open img.plus {
+  display: none !important;
+}
+
+section.latest-news .notices .card p {
+  line-height: 30px;
+  padding-right: 86px;
+  font-size: 18px;
+  color: #454545;
+  font-family: 'regular';
+}
+
+section.online-news {
+  text-align: center;
+  margin-bottom: 116px;
+}
+
+section.online-news h6 {
+  font-size: 24px;
+  color: #C46508;
+  font-family: 'medium';
+  padding-bottom: 30px;
+  letter-spacing: 3px;
+}
+
+section.online-news h2 {
+  font-size: 48px;
+  font-family: 'medium';
+  color: #454545;
+  padding-bottom: 70px;
+  letter-spacing: 5px;
+}
+
+section.online-news .vid {
+  text-align: left;
+  padding-right: 60px;
+}
+
+section.online-news .vid .infor {
+  width: 350px;
+  height: 230px;
+  margin-bottom: 40px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.online-news .vid .infor img {
+  height: 100%;
+}
+
+section.online-news .vid .infor p {
+  position: absolute;
+  -ms-flex-item-align: center;
+      align-self: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 999;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  font-size: 60px;
+}
+
+section.online-news .vid .infor:hover p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.online-news .vid h4 {
+  font-family: 'medium';
+  font-size: 36px;
+  color: #454545;
+  padding-bottom: 20px;
+  letter-spacing: normal;
+}
+
+section.online-news .vid span {
+  font-size: 21px;
+  font-family: 'medium';
+  color: #C46508;
+}
+
+section.donate {
+  margin-bottom: 125px;
+}
+
+section.donate > div .ifame {
+  width: 100%;
+  height: 100%;
+}
+
+section.donate > div .ifame img {
+  width: 100%;
+  height: 100%;
+}
+
+section.donate > div .video-info {
+  width: 100%;
+  background-color: #F8E1F4;
+  height: 100%;
+  padding: 65px 50px;
+}
+
+section.donate > div .video-info h5 {
+  color: #C46508;
+  font-size: 26px;
+  padding-bottom: 40px;
+  font-family: 'medium';
+}
+
+section.donate > div .video-info h3 {
+  line-height: 50px;
+  font-size: 48px;
+  font-family: 'medium';
+  font-weight: 500;
+  letter-spacing: .1em;
+  padding-bottom: 30px;
+}
+
+section.donate > div .video-info p {
+  color: #454545;
+  font-size: 22px;
+  font-family: 'regular';
+  padding: 15px 0;
+  font-weight: 400;
+  line-height: 30px;
+  word-spacing: .1em;
+}
+
+section.donate > div .video-info button {
+  display: block;
+  height: 55px;
+  width: 304px;
+  background: #280F06;
+  color: #FFFFFF;
+  font-size: 22px;
+  margin-bottom: 38px;
+  border: none;
+  margin-top: 80px;
+}
+
+section.donate > div .video-info a {
+  padding-left: 21px;
+}
+
+section.donate > div .video-info a img {
+  height: 50px;
+}
+
+section.meet-team {
+  margin-bottom: 180px;
+  overflow: hidden;
+}
+
+section.meet-team > div .ifame {
+  width: 98%;
+  height: 100%;
+}
+
+section.meet-team > div .ifame img {
+  width: 100%;
+  height: 100%;
+}
+
+section.meet-team > div .video-info {
+  width: 100%;
+  background-color: #F8E1F4;
+  height: 100%;
+  padding: 65px 50px;
+}
+
+section.meet-team > div .video-info h5 {
+  color: #C46508;
+  font-size: 26px;
+  padding-bottom: 40px;
+  font-family: 'medium';
+}
+
+section.meet-team > div .video-info h3 {
+  line-height: 50px;
+  font-size: 48px;
+  font-family: 'medium';
+  font-weight: 500;
+  letter-spacing: .1em;
+  padding-bottom: 30px;
+}
+
+section.meet-team > div .video-info p {
+  color: #454545;
+  font-size: 22px;
+  font-family: 'regular';
+  padding: 15px 0;
+  font-weight: 400;
+  line-height: 30px;
+  word-spacing: .1em;
+}
+
+section.meet-team > div .video-info button {
+  display: block;
+  height: 55px;
+  width: 304px;
+  background: #280F06;
+  color: #FFFFFF;
+  font-size: 22px;
+  margin-bottom: 38px;
+  border: none;
+  margin-top: 80px;
+  font-family: 'regular';
+  letter-spacing: 3px;
+}
+
+section.meet-team > div .video-info a {
+  padding-left: 21px;
+}
+
+section.meet-team > div .video-info a img {
+  height: 50px;
+}
+
+section.bank-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 160px;
+  padding: 60px 0;
+  border-top: 2px solid #979797;
+  border-bottom: 2px solid #979797;
+}
+
+section.bank-details .snap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.bank-details .snap img {
+  padding-right: 50px;
+  height: 224px;
+}
+
+section.bank-details .snap .snapscan-text h5 {
+  font-size: 18px;
+  padding-bottom: 16px;
+  letter-spacing: 4px;
+  font-family: 'ft-bold';
+}
+
+section.bank-details .snap .snapscan-text h6 {
+  font-family: 'ft-medium';
+  letter-spacing: 3px;
+}
+
+section.bank-details .snap .snapscan-text a {
+  display: block;
+  color: #454545;
+  padding-bottom: 5px;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-family: 'ft-medium';
+}
+
+section.bank-details .snap .adress {
+  padding-top: 20px;
+  letter-spacing: 3px;
+  font-family: 'ft-medium';
+}
+
+section.bank-details .banking h5 {
+  font-size: 18px;
+  padding-bottom: 16px;
+  font-family: 'ft-medium';
+  letter-spacing: 4px;
+}
+
+section.bank-details .banking p {
+  line-height: 20px;
+  font-size: 14px;
+  font-family: 'ft-medium';
+  color: #454545;
+}
+
+section.bank-details .banking .acc-detail {
+  padding: 10px 0;
+}
+
+section.bank-details .banking .acc-detail .type {
+  padding-right: 40px;
+}
+
+section.bank-details .banking .acc-detail .type p {
+  padding-bottom: 10px;
+  color: #454545;
+  font-family: 'ft-medium';
+}
+
+section.location {
+  background-color: #EBE6DD;
+  padding: 74px 70px;
+  margin-bottom: 100px;
+}
+
+section.location .map img {
+  width: 560px;
+  height: 560px;
+}
+
+section.location .map h6 {
+  color: #C46508;
+  font-size: 26px;
+  font-family: 'medium';
+  padding-bottom: 12px;
+}
+
+section.location .map h4 {
+  font-size: 48px;
+  font-family: 'medium';
+  color: #454545;
+  padding-bottom: 50px;
+  letter-spacing: 3px;
+}
+
+section.location .saints img {
+  height: 360px;
+  margin-bottom: 40px;
+}
+
+section.location .saints h4 {
+  font-size: 36px;
+  color: #454545;
+  font-family: 'medium';
+  padding-bottom: 24px;
+}
+
+section.location .saints p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'regular';
+  color: #454545;
+  line-height: 30px;
+  padding-bottom: 30px;
+}
+
+section.location .saints span {
+  display: block;
+  padding-bottom: 17px;
+  font-family: 'medium';
+  color: #454545;
+  font-size: 14px;
+}
+
+section.location .saints span:nth-of-type(2) {
+  margin-bottom: 20px;
+}
+
+footer {
+  margin-bottom: 108px;
+}
+
+footer .logo {
+  padding-bottom: 45px;
+}
+
+footer .logo img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 82px;
+  padding-right: 35px;
+}
+
+footer .logo h6 {
+  line-height: 20px;
+  font-family: 'medium';
+  font-size: 26px;
+  color: #1C0902;
+  line-height: 30px;
+  letter-spacing: 5px;
+}
+
+footer p {
+  line-height: 30px;
+  font-size: 15px;
+  padding-bottom: 18px;
+  font-family: 'ft-medium';
+}
+
+footer form h6 {
+  font-family: 'medium';
+  padding-bottom: 25px;
+  font-size: 24px;
+  letter-spacing: 5px;
+}
+
+footer form input {
+  margin-bottom: 20px;
+  font-family: 'regular';
+  color: #1C0902;
+  height: 75px !important;
+}
+
+footer form textarea {
+  resize: none;
+  height: 140px !important;
+  font-family: 'regular';
+  color: #1C0902;
+}
+
+footer .links {
+  margin-left: 72px;
+}
+
+footer .links h6 {
+  font-family: 'medium';
+  padding-bottom: 25px;
+  font-size: 24px;
+  letter-spacing: 5px;
+}
+
+footer .links a {
+  font-size: 24px;
+  font-family: 'medium';
+  padding-bottom: 10px;
+  display: block;
+  color: #454545;
+}
+
+footer .links button {
+  background-color: #1C0902;
+  height: 53px;
+  width: 222px;
+  color: #EBE6DD;
+  font-size: 24px;
+  margin-top: 35px;
+  font-family: 'medium';
+}
+
+section.heroe.bill {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 70px;
+  background: url(./img/childrensChurchHero.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 80vh;
+  background-size: cover;
+}
+
+section.heroe.bill h1 {
+  text-transform: capitalize;
+}
+
+section.about-children {
+  margin: 90px 0;
+  color: #454545;
+  margin-bottom: 137px;
+}
+
+section.about-children .kids-video {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.about-children .kids-video p {
+  position: absolute;
+  font-size: 80px;
+  color: #fff;
+  font-family: "Font Awesome 5 Free";
+}
+
+section.about-children .kids-video img {
+  width: 100%;
+}
+
+section.about-children h2 {
+  font-style: bold;
+  font-family: 'bold';
+  font-size: 21px;
+  padding-bottom: 14px;
+}
+
+section.about-children p {
+  font-family: 'regular';
+  padding-bottom: 10px;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: 'regular';
+}
+
+section.about-children ol {
+  padding-left: 18px;
+  padding-bottom: 12px;
+}
+
+section.about-children ol li {
+  list-style: numbers;
+  padding-bottom: 5px;
+  font-size: 16px;
+  font-family: 'light';
+}
+
+section.about-children h6 {
+  color: #454545;
+  font-size: 20px;
+  font-family: 'medium';
+}
+
+section.about-children .img-fluid {
+  margin-top: 90px;
+}
+
+section.text {
+  text-align: center;
+  padding-bottom: 150px;
+}
+
+section.text p {
+  font-size: 22px;
+  color: #454545;
+  font-family: 'regular';
+  padding-bottom: 30px;
+  line-height: 30px;
+}
+
+section.gallery {
+  padding-bottom: 100px;
+}
+
+section.gallery img {
+  width: 100%;
+}
+
+section.about-messy {
+  margin: 48px 0;
+}
+
+section.about-messy > div .logo img {
+  height: 285px;
+}
+
+section.about-messy > div .messy-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+section.about-messy > div .messy-text span {
+  font-family: 'regular';
+  color: #454545;
+  font-size: 22px;
+  padding-bottom: 24px;
+}
+
+section.about-messy > div .messy-text h3 {
+  font-family: 'regular';
+  font-size: 72px;
+  padding-bottom: 14px;
+}
+
+section.about-messy > div .messy-text p {
+  font-size: 22px;
+  font-family: 'italic';
+  color: #454545;
+}
+
+section.about-messy > div p {
+  font-size: 22px;
+  color: #454545;
+  font-family: 'regular';
+  padding-bottom: 24px;
+  line-height: 30px;
+}
+
+section.about-messy > div p:first-of-type {
+  padding-top: 44px;
+}
+
+section.events-heroe {
+  background: url(./img/peopleOutside.png) !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section.events-items {
+  margin-top: 100px;
+  margin-bottom: 189px;
+}
+
+section.events-items > div h3 {
+  font-size: 48px;
+  font-family: 'regular';
+  color: #454545;
+  padding-bottom: 85px;
+}
+
+section.events-items > div .good-caption {
+  width: 100%;
+  height: 460px;
+  margin-bottom: 85px;
+}
+
+section.events-items > div .good-caption img {
+  width: 100%;
+}
+
+section.events-items > div .good-friday-text h3 {
+  padding-bottom: 30px;
+  font-size: 38px;
+  font-family: 'medium';
+}
+
+section.events-items > div .good-friday-text h5 {
+  font-size: 21px;
+  font-family: 'regular';
+  padding-bottom: 18px;
+}
+
+section.events-items > div .good-friday-text span.date {
+  padding-bottom: 18px;
+  display: block;
+  font-family: 'regular';
+}
+
+section.events-items > div .good-friday-text span.date:last-of-type {
+  padding-bottom: 30px;
+}
+
+section.events-items > div .good-friday-text p.adress {
+  font-family: 'regular';
+  font-size: 21px;
+  padding-bottom: 27px;
+  color: #454545;
+}
+
+section.events-items > div .good-friday-text p {
+  font-size: 16px;
+  color: #454545;
+  line-height: 30px;
+  font-family: 'medium';
+}
+
+section.events-items > div .caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+section.events-items > div .caption img {
+  height: 220px;
+  padding-right: 35px;
+}
+
+section.events-items > div .caption .text-inner {
+  width: 100%;
+}
+
+section.events-items > div .caption .text-inner h6 {
+  font-size: 21px;
+  color: #454545;
+  font-family: 'regular';
+  padding-bottom: 12px;
+}
+
+section.events-items > div .caption .text-inner h3 {
+  font-size: 35px;
+  font-family: 'medium';
+  padding-bottom: 24px;
+}
+
+section.events-items > div .caption .text-inner p {
+  font-size: 16px;
+  font-family: 'regular';
+  line-height: 20px;
+  padding-bottom: 40px;
+  color: #454545;
+}
+
+section.events-items > div .caption .text-inner span.date {
+  color: #454545;
+  font-family: 'regular';
+  font-size: 21px;
+}
+
+section.sermon-heroe {
+  background: url(./img/sermonsHero.png) !important;
+  background-position: center bottom;
+  background-repeat: no-repeat !important;
+  background-size: cover;
+  height: 100vh;
+}
+
+section.latest-sermons {
+  margin: 100px 0;
+}
+
+section.latest-sermons h2 {
+  font-size: 48px;
+  color: #454545;
+  font-family: 'medium';
+  padding-bottom: 60px;
+}
+
+section.latest-sermons .sermon-iframe {
+  height: 405px;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 52px;
+}
+
+section.latest-sermons .sermon-iframe img {
+  height: 100%;
+  width: 100%;
+}
+
+section.latest-sermons .sermon-iframe .fa {
+  position: absolute;
+  color: white;
+  font-size: 60px;
+}
+
+section.latest-sermons .sermon-caption h3 {
+  font-size: 48px;
+  color: #454545;
+  font-family: 'bold';
+  padding-bottom: 20px;
+}
+
+section.latest-sermons .sermon-caption p {
+  font-size: 18px;
+  font-family: 'regular';
+  color: #454545;
+  padding-bottom: 24px;
+  line-height: 20px;
+}
+
+section.latest-sermons .sermon-caption p.date {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: 'regular';
+}
+
+section.latest-sermons .sermon-caption p.date span {
+  color: #454545;
+}
+
+section.latest-sermons .sermon-caption a {
+  background: #000000;
+  width: 190px;
+  height: 43px;
+  font-size: 18px;
+  font-family: 'regular';
+  color: #454545;
+  padding: 11px;
+}
+
+section.latest-sermons .sermon-items {
+  margin-top: 145px;
+}
+
+section.latest-sermons .sermon-items img {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+section.latest-sermons .sermon-items h3 {
+  font-size: 36px;
+  font-family: 'medium';
+  color: #454545;
+  padding-bottom: 16.5px;
+}
+
+section.latest-sermons .sermon-items span {
+  color: #C46508;
+  font-size: 21px;
+  font-family: 'medium';
+  padding-bottom: 11px;
+}
+
+section.latest-sermons .sermon-items p {
+  font-size: 18px;
+  color: #454545;
+  font-family: 'regular';
+  line-height: 30px;
+}
+
+section.latest-sermons a.earlier {
+  text-align: center;
+  color: #C46508;
+  font-size: 16px;
+  font-family: 'medium';
+  margin: 24px 0;
+  display: block;
+  letter-spacing: 3px;
+}
+
+section.latest-sermons hr {
+  background-color: #1C0902;
+  width: 170px;
+  margin: auto;
+}
+
+section.hope {
+  text-align: center;
+  margin: 100px 0;
+}
+
+section.hope h6 {
+  font-size: 24px;
+  font-family: 'medium';
+  color: #C46508;
+  padding-bottom: 21px;
+}
+
+section.hope h3 {
+  font-size: 48px;
+  color: #4d4d4d;
+  padding-bottom: 46px;
+  font-family: 'medium';
+}
+
+section.hope > div .team {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+section.hope > div .team img {
+  width: 100%;
+}
+
+section.hope > div .team h5 {
+  color: #1C0902;
+  font-size: 36px;
+  font-family: 'medium';
+  padding-bottom: 7px;
+}
+
+section.hope > div .team span {
+  color: #C46508;
+  font-size: 24px;
+  font-family: 'regular';
+  padding-bottom: 10px;
+}
+
+section.hope > div .team p {
+  font-size: 18px;
+  color: #1C0902;
+  font-family: 'regular';
+  line-height: 22px;
+}
+
+section.donate-now {
+  margin-top: 88px;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+section.donate-now > div h6 {
+  color: #C46508;
+  font-size: 24px;
+  font-family: 'medium';
+  padding-bottom: 36px;
+}
+
+section.donate-now > div h3 {
+  font-size: 48px;
+  font-family: 'medium';
+  color: #454545;
+  padding-bottom: 40px;
+  letter-spacing: 3px;
+}
+
+section.donate-now > div p {
+  font-size: 22px;
+  color: #454545;
+  font-family: 'regular';
+  padding-bottom: 22px;
+  line-height: 30px;
+}
+
+section.donate-now > div img {
+  height: 500px;
+  padding-bottom: 50px;
+}
+
+section.donate-now > div .support .donated {
+  height: 200px;
+  background: #EBE6DD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+section.donate-now > div .support .donated .progress {
+  height: 2px;
+  z-index: 9999;
+  position: absolute;
+  width: 80%;
+  margin: 0 auto;
+  background: gray;
+}
+
+section.donate-now > div .support .donated .progress .progress-bar {
+  width: 80%;
+  background-color: #979797;
+  height: 10px;
+}
+
+section.donate-now > div .support .range {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  padding-top: 20px;
+}
+
+section.donate-now > div .support .range p {
+  color: #1C0902;
+  font-size: 21px;
+  font-family: 'regular';
+}
+
+section.donate-now > div .support a.btn {
+  background: #1C0902;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 222px;
+  text-align: center;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #EBE6DD;
+  font-size: 24px;
+  font-family: 'medium';
+}
+
+section.donate-now > div .gratitude {
+  margin-top: 63px;
+}
+
+section.donate-now > div .gratitude h3 {
+  margin-bottom: 50px;
+}
+
+section.donate-now > div .gratitude p {
+  color: #454545;
+  font-family: 'regular';
+  line-height: 30px;
+}
+
+@media (max-width: 575px) {
+  * {
+    line-height: normal;
+  }
+  body > footer {
+    margin-bottom: 24px;
+  }
+  body > footer > div > div > div:nth-child(3) > div {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  section.events-items {
+    margin-top: 5rem;
+    margin-bottom: 30px;
+  }
+  section.events-items > div h3 {
+    font-size: 26px;
+    padding-bottom: 30px;
+  }
+  section.events-items > div .good-caption {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 30px;
+  }
+  section.events-items > div .good-caption img {
+    width: 100%;
+  }
+  section.events-items > div .good-friday-text h3 {
+    padding-bottom: 20px;
+    font-size: 26px;
+  }
+  section.events-items > div .good-friday-text h5 {
+    font-size: 21px;
+    font-family: 'regular';
+    padding-bottom: 18px;
+  }
+  section.events-items > div .good-friday-text span.date:last-of-type {
+    padding-bottom: 20px;
+  }
+  section.events-items > div .caption {
+    margin-bottom: 40px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section.events-items > div .caption img {
+    padding-right: 15px;
+    width: 100%;
+    height: auto;
+  }
+  section.events-items > div .caption .text-inner {
+    width: 100%;
+  }
+  section.events-items > div .caption .text-inner h6 {
+    font-size: 21px;
+  }
+  header.nav {
+    padding: 20px;
+  }
+  header.nav p {
+    font-size: 8px;
+  }
+  header.nav ul.nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.work > div .video-info button, section.donate > div .video-info button {
+    width: 220px;
+  }
+  section.work > div .video-info h3, section.donate > div .video-info h3 {
+    font-size: 25px;
+  }
+  body section.heroe {
+    height: 86vh !important;
+  }
+  body section.heroe p {
+    font-size: 14px !important;
+  }
+  body section.heroe p:nth-of-type(2) {
+    font-size: 14px !important;
+    padding: 0 30px;
+  }
+  body section.heroe h1 {
+    font-size: 25px !important;
+  }
+  body section.heroe a.btn {
+    height: 50px;
+    width: 200px;
+    font-size: 12px;
+    margin-top: 33px;
+  }
+  body section.heroe ul.nav {
+    width: 100%;
+    padding: 28px;
+  }
+  body section.heroe ul.nav li a {
+    font-size: 16px !important;
+  }
+  section.about h5 {
+    font-size: 18px;
+  }
+  section.about h2 {
+    font-size: 28px;
+  }
+  section.about p {
+    font-size: 15px;
+  }
+  section.meet-team {
+    margin-bottom: 0px;
+  }
+  section.meet-team h3 {
+    font-size: 25px !important;
+  }
+  section.meet-team .video-info button {
+    width: 230px !important;
+  }
+  section.reflections {
+    padding-top: 25px;
+    padding-bottom: 60px;
+  }
+  section.reflections > div > div h5 {
+    padding-bottom: 30px;
+    font-size: 24px;
+  }
+  section.reflections > div > div > div .prayer-img {
+    height: 100%;
+    width: 100%;
+  }
+  section.reflections > div > div > div .prayer-img img {
+    width: auto;
+    height: 100% !important;
+  }
+  section.reflections > div > div > div .time .card {
+    width: 100%;
+    margin: 20px 0;
+  }
+  section.reflections > div > div > div .time .card:nth-of-type(2) {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  section.reflections > div > div > div .time .card p {
+    padding-bottom: 15px;
+  }
+  section.reflections > div > div > div .last .card {
+    width: 100%;
+    margin: 20px 0;
+    height: 100% !important;
+  }
+  section.reflections > div > div > div .last img {
+    width: 100%;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  section.events {
+    padding-top: 60px;
+  }
+  section.events > div .upcoming-events h5 {
+    font-size: 20px;
+  }
+  section.events > div .upcoming-events h3 {
+    font-size: 24px;
+  }
+  section.events > div .upcoming-events .event {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section.events > div .upcoming-events .event img {
+    width: 100%;
+    padding-right: 0;
+  }
+  section.events > div .upcoming-events .event .description {
+    padding-top: 12px;
+  }
+  section.events > div .upcoming-events .event .description p {
+    line-height: 20px;
+  }
+  section.events > div .upcoming-events .event .description h4 {
+    font-size: 24px;
+  }
+  section.events > div .upcoming-events .event .description h6 {
+    font-size: 16px;
+  }
+  section.events > div .service-times h6 {
+    color: #C46508;
+    font-family: 'regular';
+    font-size: 24px;
+    padding-bottom: 16px;
+  }
+  section.events > div .service-times .time {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 24px;
+  }
+  section.events > div .service-times .time p {
+    padding-left: 25px;
+  }
+  section.events > div .service-times .time p span {
+    display: block;
+    line-height: 20px;
+  }
+  section.events > div .service-times .abt-service {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section.events > div .service-times .abt-service .card {
+    height: 100% !important;
+    width: 100%;
+    padding: 30px 20px;
+  }
+  section.events > div .service-times .abt-service .card h3 {
+    text-transform: capitalize;
+    color: #454545;
+    font-size: 22px;
+  }
+  section.events > div .service-times .abt-service .card p {
+    padding: 15px 0px;
+    line-height: normal !important;
+  }
+  section.events > div .service-times .abt-service img {
+    height: 100%;
+    display: none;
+  }
+  section.latest-news {
+    padding-left: 0px !important;
+    padding-bottom: 20px;
+    margin: 20px 0;
+    text-align: center;
+  }
+  section.latest-news h3 {
+    font-size: 36px;
+  }
+  section.latest-news .notices {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section.latest-news .notices img.bible {
+    padding: 20px;
+    width: 100%;
+  }
+  section.latest-news .notices .card {
+    margin-bottom: 30px;
+    width: 100% !important;
+    padding: 20px 20px;
+  }
+  section.latest-news .notices .card .card-header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  section.latest-news .notices .card .card-header h3 {
+    font-size: 10px;
+  }
+  section.latest-news .notices .card .card-header button.btn-link:focus {
+    outline: none;
+  }
+  section.latest-news .notices .card .card-header button.btn-link img.minus {
+    display: none;
+    height: 20px;
+  }
+  section.latest-news .notices .card .card-header button.btn-link img.plus {
+    display: block;
+    height: 20px;
+  }
+  section.latest-news .notices .card .card-header p {
+    padding-right: 0px;
+  }
+  section.bank-details {
+    margin-bottom: 0px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 20px 20px;
+  }
+  section.bank-details .snap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section.bank-details .snap img {
+    padding-right: 50px;
+    height: 224px;
+  }
+  section.bank-details .snap .snapscan-text h5 {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+  section.bank-details .snap .adress {
+    padding-top: 20px;
+  }
+  section.bank-details .banking {
+    font-family: 'medium-2';
+    margin: 20px 0;
+  }
+  section.bank-details .banking h5 {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+  section.bank-details .banking p {
+    line-height: 18px;
+    font-size: 12px;
+  }
+  section.bank-details .banking .acc-detail {
+    padding: 10px 0;
+  }
+  section.bank-details .banking .acc-detail .type {
+    padding-right: 40px;
+  }
+  section.bank-details .banking .acc-detail .type p {
+    padding-bottom: 10px;
+  }
+  section.location {
+    padding: 30px 0px;
+    margin-bottom: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  section.location .map h4 {
+    font-size: 36px;
+  }
+  section.location .map h6 {
+    font-size: 20px;
+  }
+  section.location .map img {
+    width: 100%;
+    height: auto;
+  }
+  section.location .saints {
+    width: 100%;
+  }
+  section.location .saints img {
+    height: 100%;
+    margin-bottom: 40px;
+  }
+  section.location .saints h4 {
+    font-size: 36px;
+    color: #454545;
+    font-family: 'ft-medium';
+    padding-bottom: 24px;
+  }
+  section.location .saints p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'ft-medium';
+    color: #454545;
+    line-height: 30px;
+    padding-bottom: 30px;
+  }
+  section.location .saints span {
+    display: block;
+    padding-bottom: 17px;
+    font-family: 'ft-medium';
+    color: #454545;
+    font-size: 14px;
+  }
+  section.location .saints span:nth-of-type(2) {
+    margin-bottom: 20px;
+  }
+  section.online-news h6 {
+    font-size: 16px;
+  }
+  section.online-news h2 {
+    font-size: 30px;
+  }
+  section.online-news .vid {
+    padding: 0;
+    margin-bottom: 40px;
+  }
+  section.online-news .vid .infor {
+    width: 100%;
+  }
+  section.online-news .vid .infor img {
+    width: 100%;
+    height: auto;
+  }
+  section.donate {
+    margin: 0;
+  }
+  section.donate h3 {
+    font-size: 25px !important;
+  }
+  section.about-messy > div .logo img {
+    width: 100%;
+  }
+  section.about-messy > div p {
+    font-size: 22px;
+    color: #454545;
+    font-family: 'regular';
+    padding-bottom: 24px;
+    line-height: 30px;
+  }
+  section.about-messy > div p:first-of-type {
+    padding-top: 44px;
+  }
+}
+
+@media (max-width: 768px) {
+  header.nav {
+    padding: 20px;
+  }
+  section.events > div > div .service-times h6 {
+    color: #C46508;
+    font-family: 'regular';
+    font-size: 24px;
+    padding-bottom: 16px;
+  }
+  section.events > div > div .service-times .abt-service .card {
+    overflow: hidden;
+  }
+  section.events > div > div .service-times .abt-service .card p {
+    font-size: 15px;
+    line-height: 23px;
+  }
+  body > section.bank-details.container {
+    margin: auto;
+  }
+  section.online-news .vid {
+    padding: 0;
+    margin-bottom: 40px;
+  }
+  section.online-news .vid .infor {
+    width: 100%;
+    margin-bottom: 30px;
+    height: 100%;
+  }
+  section.online-news .vid .infor img {
+    width: 100%;
+    height: auto;
+  }
+  section.online-news .vid .infor p {
+    font-size: 16px;
+  }
+  section.categories > div > div .infor {
+    height: 150px;
+    margin-bottom: 30px;
+  }
+  section.categories > div > div .infor img {
+    height: 100%;
+    height: auto;
+  }
+  section.categories > div > div .infor p {
+    font-size: 18px;
+  }
+  section.reflections > div > div > div .prayer-img {
+    width: 100%;
+  }
+  section.reflections > div > div > div .prayer-img img {
+    height: 600px;
+    width: 100%;
+  }
+  section.reflections > div > div > div .time .card {
+    height: 290px;
+  }
+  section.reflections > div > div > div .time .card .verses {
+    line-height: normal;
+  }
+  section.reflections > div > div > div .time .card p.message {
+    line-height: normal;
+  }
+  section.reflections > div > div > div .last {
+    margin: 30px 0;
+  }
+  section.reflections > div > div > div .last .card {
+    width: 100%;
+    height: 500px;
+  }
+  section.reflections > div > div > div .last .card p {
+    line-height: 2;
+    font-size: 24px;
+  }
+  section.latest-news {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section.latest-news .notices {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 20px;
+  }
+  section.latest-news .notices img.bible {
+    padding-left: 0px;
+    height: 340px;
+  }
+  section.latest-news .notices .card {
+    margin-bottom: 30px;
+    width: 500px;
+  }
+  section.meet-team {
+    margin: 0;
+  }
+  section.location .saints {
+    margin-top: 40px;
+  }
+  section.bank-details {
+    margin: 0;
+    padding-left: 30px;
+    border: none;
+  }
+  section.bank-details .banking {
+    padding-left: 22px;
+  }
+  section.donate {
+    margin-bottom: 0;
+  }
+  section.heroe {
+    height: 100vh !important;
+  }
+  section.heroe h1 {
+    font-size: 25px !important;
+  }
+  section.heroe p {
+    font-size: 14px;
+    padding: 12px 16px;
+  }
+  section.heroe p:nth-of-type(2) {
+    font-size: 14px;
+    line-height: normal;
+  }
+  section.heroe h1 {
+    font-size: 50px;
+  }
+  section.heroe ul.nav {
+    width: 100%;
+    padding: 20px 30px;
+  }
+  section.heroe ul.nav li {
+    padding-bottom: 20px;
+    padding-bottom: 25px;
+  }
+  section.heroe ul.nav li a {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+  body section.heroe {
+    height: 100vh;
+  }
+  body section.heroe p {
+    font-size: 12px;
+    padding-bottom: 16px;
+  }
+  body section.heroe p:nth-of-type(2) {
+    font-size: 18px;
+    line-height: normal;
+  }
+  body section.heroe h1 {
+    font-size: 50px;
+  }
+  section.categories {
+    padding-top: 85px;
+    padding-bottom: 65px;
+  }
+  section.categories > div > div {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section.categories > div > div .infor {
+    height: 240px;
+    width: 100%;
+  }
+  section.categories > div > div .infor img {
+    width: 100%;
+  }
+  section.categories > div > div .infor p {
+    font-size: 18px;
+  }
+  section.reflections > div > div > div .time .card {
+    height: 260px;
+  }
+  section.reflections > div > div > div .time .card:nth-of-type(2) {
+    margin-top: 20px;
+  }
+  section.reflections > div > div > div .last {
+    margin: 30px 0;
+  }
+  section.reflections > div > div > div .last .card {
+    width: 100%;
+    height: 480px;
+  }
+  section.reflections > div > div > div .last .card p {
+    line-height: 2;
+    font-size: 24px;
+  }
+  body > section.events > div > div > div:nth-child(2) > div > div.abt-service > div > p {
+    font-size: 18px !important;
+    line-height: 24px !important;
+  }
+}
+
+@media (max-width: 1040px) {
+  section.location .map img {
+    width: 100%;
+  }
+  section.location .saints img {
+    height: 290px;
+  }
+  section.latest-news {
+    padding-left: 60px;
+  }
+  section.latest-news .notices img.bible {
+    padding-left: 20px;
+    height: 280px;
+  }
+  section.latest-news .notices .card {
+    width: 555px;
+  }
+  section.online-news .vid .infor {
+    width: 100%;
+  }
+  section.online-news .vid .infor img {
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  section.online-news .vid .infor h4 {
+    font-size: 25px;
+  }
+  section.heroe {
+    height: 70vh;
+  }
+  section.heroe h1 {
+    font-size: 30px;
+  }
+  section.heroe p {
+    font-size: 18px !important;
+    line-height: normal;
+  }
+  section.heroe ul.nav {
+    padding: 30px 40px;
+  }
+  section.heroe ul.nav li {
+    padding-bottom: 25px;
+  }
+  section.reflections > div > div .prayer-img {
+    height: 400px;
+  }
+  section.reflections > div > div .prayer-img img {
+    height: auto;
+    width: 80%;
+  }
+  section.reflections > div > div .time {
+    width: 100%;
+  }
+  section.reflections > div > div .time .card {
+    height: 100%;
+    width: 100%;
+  }
+  section.reflections > div > div .time .card:nth-of-type(2) {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-top: 20px;
+  }
+  section.reflections > div > div .time .card .verses {
+    padding-bottom: 13px;
+    line-height: 20px;
+  }
+  section.reflections > div > div .last .card {
+    width: 100%;
+    height: 600px;
+  }
+  section.reflections > div > div .last img {
+    width: 100%;
+    justify-self: flex-end;
+  }
+  section.meet-team > div .video-info {
+    padding: 30px 50px;
+  }
+  section.meet-team > div .video-info h5 {
+    padding-bottom: 30px;
+  }
+  section.meet-team > div .video-info h3 {
+    line-height: 20px;
+    font-size: 36px;
+    padding-bottom: 10px;
+  }
+  section.meet-team > div .video-info p {
+    color: #454545;
+    font-size: 16px;
+    padding: 12px 0;
+    line-height: 20px;
+  }
+  section.donate > div .video-info {
+    padding: 30px 30px;
+  }
+  section.donate > div .video-info h5 {
+    font-size: 22px;
+    padding-bottom: 15px;
+  }
+  section.donate > div .video-info h3 {
+    line-height: 30px;
+    font-size: 36px;
+  }
+  section.donate > div .video-info p {
+    color: #454545;
+    font-size: 22px;
+    font-family: 'regular';
+    padding: 15px 0;
+    font-weight: 400;
+    line-height: 25px;
+    word-spacing: .1em;
+  }
+  section.donate > div .video-info button {
+    font-family: 'medium';
+  }
+  section.donate > div .video-info a {
+    padding-left: 21px;
+  }
+  section.donate > div .video-info a img {
+    height: 50px;
+  }
+  section.work, section.donate {
+    overflow: hidden;
+  }
+  section.work > div .video-info, section.donate > div .video-info {
+    padding: 30px 40px;
+  }
+  section.work > div .video-info h5, section.donate > div .video-info h5 {
+    font-size: 22px;
+    padding-bottom: 15px;
+  }
+  section.work > div .video-info h3, section.donate > div .video-info h3 {
+    line-height: 30px;
+    font-size: 36px;
+  }
+  section.work > div .video-info p, section.donate > div .video-info p {
+    color: #454545;
+    font-size: 16px;
+    padding: 12px 0;
+  }
+  section.events {
+    padding-top: 122px;
+  }
+  section.events > div .service-times .time {
+    padding-bottom: 75px;
+  }
+  section.events > div .service-times .abt-service .card {
+    height: 560px;
+    width: 100%;
+  }
+  section.events > div .service-times .abt-service .card h3 {
+    text-transform: capitalize;
+    color: #454545;
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  section.events > div .service-times .abt-service .card p {
+    padding: 12px 0px;
+    line-height: 16px;
+    font-size: 13px;
+  }
+  section.events > div .service-times .abt-service img {
+    height: 560px;
+  }
+}
+
+@media (max-width: 320px) {
+  body > section.heroe {
+    height: 100vh;
+  }
+  body > section.heroe > h1 {
+    font-size: 21px !important;
+  }
+  body > section.heroe p {
+    font-size: 14px !important;
+  }
+  body > section.online-news > div > div > div > div > h4 {
+    font-size: 20px !important;
+  }
+  body > section.latest-news > h3 {
+    font-size: 24px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
