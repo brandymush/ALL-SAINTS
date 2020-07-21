@@ -708,38 +708,138 @@ section.latest-news .notices .card .card-header {
   height: 86px;
 }
 
-section.latest-news .notices .card .card-header button.btn-link {
+section.latest-news .notices .card .card-header button.btn-link1 {
   -ms-flex-item-align: start;
       align-self: flex-start;
   padding: 0;
   font-family: "Font Awesome 5 Brands";
 }
 
-section.latest-news .notices .card .card-header button.btn-link:focus {
+section.latest-news .notices .card .card-header button.btn-link1:focus {
   outline: none;
 }
 
-section.latest-news .notices .card .card-header button.btn-link img.minus {
+section.latest-news .notices .card .card-header button.btn-link1 img.minus {
   display: none;
   height: 50px;
 }
 
-section.latest-news .notices .card .card-header button.btn-link img.plus {
+section.latest-news .notices .card .card-header button.btn-link1 img.plus {
   display: block;
   height: 50px;
   -webkit-columns: #4d4d4d;
           columns: #4d4d4d;
 }
 
-section.latest-news .notices .card .card-header button.btn-link.open:focus {
+section.latest-news .notices .card .card-header button.btn-link1.open1:focus {
   outline: none;
 }
 
-section.latest-news .notices .card .card-header button.btn-link.open img.minus {
+section.latest-news .notices .card .card-header button.btn-link1.open1 img.minus {
   display: block !important;
 }
 
-section.latest-news .notices .card .card-header button.btn-link.open img.plus {
+section.latest-news .notices .card .card-header button.btn-link1.open1 img.plus {
+  display: none !important;
+}
+
+section.latest-news .notices .card .card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+  border: none;
+  height: 86px;
+}
+
+section.latest-news .notices .card .card-header button.btn-link2 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 0;
+  font-family: "Font Awesome 5 Brands";
+}
+
+section.latest-news .notices .card .card-header button.btn-link2:focus {
+  outline: none;
+}
+
+section.latest-news .notices .card .card-header button.btn-link2 img.minus {
+  display: none;
+  height: 50px;
+}
+
+section.latest-news .notices .card .card-header button.btn-link2 img.plus {
+  display: block;
+  height: 50px;
+  -webkit-columns: #4d4d4d;
+          columns: #4d4d4d;
+}
+
+section.latest-news .notices .card .card-header button.btn-link2.open2:focus {
+  outline: none;
+}
+
+section.latest-news .notices .card .card-header button.btn-link2.open2 img.minus {
+  display: block !important;
+}
+
+section.latest-news .notices .card .card-header button.btn-link2.open2 img.plus {
+  display: none !important;
+}
+
+section.latest-news .notices .card .card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+  border: none;
+  height: 86px;
+}
+
+section.latest-news .notices .card .card-header button.btn-link3 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 0;
+  font-family: "Font Awesome 5 Brands";
+}
+
+section.latest-news .notices .card .card-header button.btn-link3:focus {
+  outline: none;
+}
+
+section.latest-news .notices .card .card-header button.btn-link3 img.minus {
+  display: none;
+  height: 50px;
+}
+
+section.latest-news .notices .card .card-header button.btn-link3 img.plus {
+  display: block;
+  height: 50px;
+  -webkit-columns: #4d4d4d;
+          columns: #4d4d4d;
+}
+
+section.latest-news .notices .card .card-header button.btn-link3.open3:focus {
+  outline: none;
+}
+
+section.latest-news .notices .card .card-header button.btn-link3.open3 img.minus {
+  display: block !important;
+}
+
+section.latest-news .notices .card .card-header button.btn-link3.open3 img.plus {
   display: none !important;
 }
 
@@ -1698,8 +1798,17 @@ section.donate-now > div .support .donated {
   margin-bottom: 40px;
 }
 
+section.donate-now > div .support .donated a {
+  position: relative;
+  top: -40px;
+  right: -70%;
+  color: #C46508;
+  text-decoration: none;
+  font-family: 'regular';
+}
+
 section.donate-now > div .support .donated .progress {
-  height: 2px;
+  height: 5px;
   z-index: 9999;
   position: absolute;
   width: 80%;
@@ -1709,8 +1818,8 @@ section.donate-now > div .support .donated .progress {
 
 section.donate-now > div .support .donated .progress .progress-bar {
   width: 80%;
-  background-color: #979797;
-  height: 10px;
+  background-color: #454545;
+  height: 20px;
 }
 
 section.donate-now > div .support .range {

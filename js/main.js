@@ -8,8 +8,16 @@ $("#open").click(function(){
 
 
 
-$('button.btn-link').click(function(){
-    $('button.btn-link').toggleClass('open');
+$('button.btn-link1').click(function(){
+    $('button.btn-link1').toggleClass('open1');
+});
+
+$('button.btn-link2').click(function(){
+    $('button.btn-link2').toggleClass('open2');
+});
+
+$('button.btn-link3').click(function(){
+    $('button.btn-link3').toggleClass('open3');
 });
 
 

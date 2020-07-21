@@ -221,13 +221,41 @@ section.latest-news{padding-top: 100px;padding-left: 70px;background:#8DDED2;pad
     .card{margin-bottom: 50px;width:735px;background:#fff;border:none;padding:40px 30px;
         h3{font-size: 21px;font-family: 'medium';color: #454545;}
         .card-header{display: flex;align-items: center;justify-content: space-between;background-color: #fff;border: none;height:86px;
-            button.btn-link{align-self: flex-start;padding:0;font-family: "Font Awesome 5 Brands";
+            button.btn-link1{align-self: flex-start;padding:0;font-family: "Font Awesome 5 Brands";
                 &:focus{outline:none;}
                img.minus{display: none;height:50px;}
                img.plus{display:block;height: 50px;columns:#4d4d4d;}
                
             }
-            button.btn-link.open{
+            button.btn-link1.open1{
+                &:focus{outline: none;}
+                img.minus{display:block!important;}
+                img.plus{display: none !important;}
+            }
+          
+        }
+        .card-header{display: flex;align-items: center;justify-content: space-between;background-color: #fff;border: none;height:86px;
+            button.btn-link2{align-self: flex-start;padding:0;font-family: "Font Awesome 5 Brands";
+                &:focus{outline:none;}
+               img.minus{display: none;height:50px;}
+               img.plus{display:block;height: 50px;columns:#4d4d4d;}
+               
+            }
+            button.btn-link2.open2{
+                &:focus{outline: none;}
+                img.minus{display:block!important;}
+                img.plus{display: none !important;}
+            }
+          
+        }
+        .card-header{display: flex;align-items: center;justify-content: space-between;background-color: #fff;border: none;height:86px;
+            button.btn-link3{align-self: flex-start;padding:0;font-family: "Font Awesome 5 Brands";
+                &:focus{outline:none;}
+               img.minus{display: none;height:50px;}
+               img.plus{display:block;height: 50px;columns:#4d4d4d;}
+               
+            }
+            button.btn-link3.open3{
                 &:focus{outline: none;}
                 img.minus{display:block!important;}
                 img.plus{display: none !important;}
@@ -511,8 +539,9 @@ section.donate-now{margin-top:88px;text-align:center;margin-bottom: 65px;
         .support{
            
             .donated{height:200px;background: #EBE6DD;display:flex;align-items:center;justify-content:center;position:relative;margin-bottom:40px;
-                .progress{height:2px;z-index:9999;position:absolute;width:80%;margin:0 auto;background:gray;
-                    .progress-bar{width:80%;background-color:#979797;height:10px;}
+                a{position: relative;top:-40px;right:-70%;color: #C46508;text-decoration: none;font-family:'regular';}
+                .progress{height:5px;z-index:9999;position:absolute;width:80%;margin:0 auto;background:gray;
+                    .progress-bar{width:80%;background-color:#454545;height:20px;}
                 }
             }
             .range{display: flex;justify-content: space-between;width:80%;padding-top:20px;
