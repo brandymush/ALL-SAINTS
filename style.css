@@ -2000,6 +2000,12 @@ section.request > div > div .request-inner span {
 }
 
 @media (max-width: 575px) {
+  img.minus {
+    height: 20px !important;
+  }
+  img.plus {
+    height: 20px !important;
+  }
   section.warden > div h3 {
     font-size: 36px;
   }
