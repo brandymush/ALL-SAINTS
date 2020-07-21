@@ -527,6 +527,53 @@ section.donate-now{margin-top:88px;text-align:center;margin-bottom: 65px;
     }
 }
 
+
+////////////////////////////////////////////contact-page-contact -page/////////////////////////////////////////////////////////////////////////////@extend
+section.staff{margin-top:180px;margin-bottom: 95px;
+    >div{
+        >div{
+            .staff-inner{display: flex;
+                img{height: auto;padding-right: 50px;width: 285px;}
+                h3{font-family: 'medium';color: #1C0902;font-size: 34px;padding-bottom:10px}
+                h6{color: #1C0902;font-size: 22px;font-family: 'medium';}
+                h5{font-size: 22px;font-family: 'medium';padding: 17px 0;}
+                p{color: #1C0902;font-size: 18px;font-family: 'regular';line-height:1;}
+            }
+        }
+    }
+}
+
+section.warden{margin-bottom: 66px;
+    >div{
+        h3{font-size: 48px;font-family: 'medium';padding-bottom: 66px;color: #1C0902;}
+        >div{
+           .contact{display: flex;align-items:center;padding:20px 0;
+               img{height: 175px;padding-right: 50px;}
+               .cont-details{
+                   p{padding-bottom: 20px;font-size: 20px;font-family: 'medium';color:#1C0902;line-height: 1.2;}
+                   span{font-size: 18px;font-family: 'regular';color: #1C0902;}
+               }
+           }
+        }
+    }
+}
+
+section.request{margin-bottom: 100px;
+    >div{
+        h3{font-size: 48px;font-family: 'medium';color: #1C0902;padding-bottom: 70px;}
+        >div{
+           .request-inner{display: flex;padding-bottom:68px;
+            .img{height: 224px;width:285px;
+               img{padding-right:50px;width: 100%;}
+            }
+               h4{font-family: 'medium';font-size: 36px;padding-bottom:27px;}
+               p{font-family: 'medium';font-size: 22px;color: #1C0902;padding-bottom: 30px;}
+               span{font-family: 'regular';font-size: 18px;color: #1C0902;}
+           }
+        }
+    }
+}
+
 ///QUERIES ------------QUERIES-----------------QUERUES------------------QUERIES---------------------QUERIES-------------------------
 
 
@@ -535,7 +582,29 @@ section.donate-now{margin-top:88px;text-align:center;margin-bottom: 65px;
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575px){
-
+  
+    section.warden{
+        >div{
+            h3{font-size:36px;}
+           
+        }
+    }
+    
+    section.request{margin-bottom: 100px;
+        >div{
+            h3{font-size:36px;}
+            >div{
+               .request-inner{flex-wrap: wrap-reverse;
+                .img{height:100%;width:100%;
+                   img{padding-right:0px;width: 100%;padding: 15px 0;}
+                 
+                }
+                h4{font-size: 25px;}
+               }
+            }
+        }
+    }
+    
 *{line-height: normal;}
 body > section.donate-now >div{
     h3{font-size: 18px;}
@@ -800,11 +869,32 @@ section.about-messy{
         }
     }
 }
+section.staff{margin-top:100px;
+    >div{
+        >div{
+            .staff-inner{flex-wrap: wrap-reverse;margin-bottom: 20px;;
+                img{padding:15px 0;padding-right:0px;width: 100%;}
+               
+            }
+        }
+    }
+}
 
 }
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 768px){
+    body > header > p{font-size: 12px;}
+    section.staff{margin-top:100px;
+        >div{
+            >div{
+                .staff-inner{flex-wrap: wrap-reverse;margin-bottom: 20px;;
+                    img{padding-bottom: 25px;}
+                   
+                }
+            }
+        }
+    }
     body > section.donate-now > div > div.support > img{height: auto;}
     section.hope{
         h6{font-size:18px;}
@@ -819,11 +909,28 @@ section.about-messy{
         }
     }
       ///what we do starts works
-  section.work,section.donate{
+  section.workgit{
     
     >div{
        
          .ifame{height: 350px;
+            img{height:100%;}
+            span{font-size: 40px;}
+        }
+            .video-info{
+              button{width:220px;}
+              h3{font-size: 25px;}
+             
+          }
+        
+    }
+}
+section.donate{
+    
+    >div{
+       
+         .ifame{height: 350px;
+            img{height:auto;}
             span{font-size: 40px;}
         }
             .video-info{
@@ -1012,6 +1119,22 @@ section.heroe{height:100vh !important;
     }
     //reflections end
     body > section.events > div > div > div:nth-child(2) > div > div.abt-service > div > p{font-size: 18px !important;line-height: 24px !important;}
+    section.work,section.donate{
+    
+        >div{
+           
+             .ifame{height: 350px;
+                img{height:100%;}
+                span{font-size: 40px;}
+            }
+                .video-info{
+                  button{width:220px;}
+                  h3{font-size: 25px;}
+                 
+              }
+            
+        }
+    }
 }
 /////////////////////////////@extend
 @media (max-width:1040px){

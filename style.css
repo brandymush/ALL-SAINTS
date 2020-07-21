@@ -1760,7 +1760,162 @@ section.donate-now > div .gratitude p {
   line-height: 30px;
 }
 
+section.staff {
+  margin-top: 180px;
+  margin-bottom: 95px;
+}
+
+section.staff > div > div .staff-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.staff > div > div .staff-inner img {
+  height: auto;
+  padding-right: 50px;
+  width: 285px;
+}
+
+section.staff > div > div .staff-inner h3 {
+  font-family: 'medium';
+  color: #1C0902;
+  font-size: 34px;
+  padding-bottom: 10px;
+}
+
+section.staff > div > div .staff-inner h6 {
+  color: #1C0902;
+  font-size: 22px;
+  font-family: 'medium';
+}
+
+section.staff > div > div .staff-inner h5 {
+  font-size: 22px;
+  font-family: 'medium';
+  padding: 17px 0;
+}
+
+section.staff > div > div .staff-inner p {
+  color: #1C0902;
+  font-size: 18px;
+  font-family: 'regular';
+  line-height: 1;
+}
+
+section.warden {
+  margin-bottom: 66px;
+}
+
+section.warden > div h3 {
+  font-size: 48px;
+  font-family: 'medium';
+  padding-bottom: 66px;
+  color: #1C0902;
+}
+
+section.warden > div > div .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+section.warden > div > div .contact img {
+  height: 175px;
+  padding-right: 50px;
+}
+
+section.warden > div > div .contact .cont-details p {
+  padding-bottom: 20px;
+  font-size: 20px;
+  font-family: 'medium';
+  color: #1C0902;
+  line-height: 1.2;
+}
+
+section.warden > div > div .contact .cont-details span {
+  font-size: 18px;
+  font-family: 'regular';
+  color: #1C0902;
+}
+
+section.request {
+  margin-bottom: 100px;
+}
+
+section.request > div h3 {
+  font-size: 48px;
+  font-family: 'medium';
+  color: #1C0902;
+  padding-bottom: 70px;
+}
+
+section.request > div > div .request-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 68px;
+}
+
+section.request > div > div .request-inner .img {
+  height: 224px;
+  width: 285px;
+}
+
+section.request > div > div .request-inner .img img {
+  padding-right: 50px;
+  width: 100%;
+}
+
+section.request > div > div .request-inner h4 {
+  font-family: 'medium';
+  font-size: 36px;
+  padding-bottom: 27px;
+}
+
+section.request > div > div .request-inner p {
+  font-family: 'medium';
+  font-size: 22px;
+  color: #1C0902;
+  padding-bottom: 30px;
+}
+
+section.request > div > div .request-inner span {
+  font-family: 'regular';
+  font-size: 18px;
+  color: #1C0902;
+}
+
 @media (max-width: 575px) {
+  section.warden > div h3 {
+    font-size: 36px;
+  }
+  section.request {
+    margin-bottom: 100px;
+  }
+  section.request > div h3 {
+    font-size: 36px;
+  }
+  section.request > div > div .request-inner {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+  section.request > div > div .request-inner .img {
+    height: 100%;
+    width: 100%;
+  }
+  section.request > div > div .request-inner .img img {
+    padding-right: 0px;
+    width: 100%;
+    padding: 15px 0;
+  }
+  section.request > div > div .request-inner h4 {
+    font-size: 25px;
+  }
   * {
     line-height: normal;
   }
@@ -2192,9 +2347,36 @@ section.donate-now > div .gratitude p {
   section.about-messy > div p:first-of-type {
     padding-top: 44px;
   }
+  section.staff {
+    margin-top: 100px;
+  }
+  section.staff > div > div .staff-inner {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    margin-bottom: 20px;
+  }
+  section.staff > div > div .staff-inner img {
+    padding: 15px 0;
+    padding-right: 0px;
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
+  body > header > p {
+    font-size: 12px;
+  }
+  section.staff {
+    margin-top: 100px;
+  }
+  section.staff > div > div .staff-inner {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    margin-bottom: 20px;
+  }
+  section.staff > div > div .staff-inner img {
+    padding-bottom: 25px;
+  }
   body > section.donate-now > div > div.support > img {
     height: auto;
   }
@@ -2226,16 +2408,34 @@ section.donate-now > div .gratitude p {
     font-family: 'regular';
     line-height: 22px;
   }
-  section.work > div .ifame, section.donate > div .ifame {
+  section.workgit > div .ifame {
     height: 350px;
   }
-  section.work > div .ifame span, section.donate > div .ifame span {
+  section.workgit > div .ifame img {
+    height: 100%;
+  }
+  section.workgit > div .ifame span {
     font-size: 40px;
   }
-  section.work > div .video-info button, section.donate > div .video-info button {
+  section.workgit > div .video-info button {
     width: 220px;
   }
-  section.work > div .video-info h3, section.donate > div .video-info h3 {
+  section.workgit > div .video-info h3 {
+    font-size: 25px;
+  }
+  section.donate > div .ifame {
+    height: 350px;
+  }
+  section.donate > div .ifame img {
+    height: auto;
+  }
+  section.donate > div .ifame span {
+    font-size: 40px;
+  }
+  section.donate > div .video-info button {
+    width: 220px;
+  }
+  section.donate > div .video-info h3 {
     font-size: 25px;
   }
   header.nav {
@@ -2437,6 +2637,21 @@ section.donate-now > div .gratitude p {
   body > section.events > div > div > div:nth-child(2) > div > div.abt-service > div > p {
     font-size: 18px !important;
     line-height: 24px !important;
+  }
+  section.work > div .ifame, section.donate > div .ifame {
+    height: 350px;
+  }
+  section.work > div .ifame img, section.donate > div .ifame img {
+    height: 100%;
+  }
+  section.work > div .ifame span, section.donate > div .ifame span {
+    font-size: 40px;
+  }
+  section.work > div .video-info button, section.donate > div .video-info button {
+    width: 220px;
+  }
+  section.work > div .video-info h3, section.donate > div .video-info h3 {
+    font-size: 25px;
   }
 }
 
