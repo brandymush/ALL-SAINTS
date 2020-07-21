@@ -48,6 +48,11 @@ q:before, q:after {
   content: none;
 }
 
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -1881,9 +1886,11 @@ section.staff > div > div .staff-inner {
 }
 
 section.staff > div > div .staff-inner img {
-  height: auto;
+  height: 224px;
   padding-right: 50px;
   width: 285px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 section.staff > div > div .staff-inner h3 {
@@ -1973,11 +1980,16 @@ section.request > div > div .request-inner {
 section.request > div > div .request-inner .img {
   height: 224px;
   width: 285px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 section.request > div > div .request-inner .img img {
   padding-right: 50px;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
 }
 
 section.request > div > div .request-inner h4 {
